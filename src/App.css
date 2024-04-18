@@ -27,8 +27,11 @@ nav {
 }
 
 header a {
-  text-decoration: none;
   color: inherit;
+}
+
+a {
+  text-decoration: none;
 }
 
 header a.logo {
