@@ -1,24 +1,19 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './Header';
-import Post from './Post';
+import  Post from './Post';
+import Layout from './Layout';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route index element={
-          <div className='blog'>
-            <Header />
-            <Post />
-            <Post />
-            <Post />
-          </div>
-        } />
-      </Routes>
-      
+    <Routes>
+      <Route path={"/"} element={<Layout />}>  
+        <Route index element={ <Post /> }/>
+        <Route path='/login' element={<h1>Login Page</h1>} />
+      </Route>
+    </Routes>
     </BrowserRouter>
-);
+  );
 }
 
 export default App;
