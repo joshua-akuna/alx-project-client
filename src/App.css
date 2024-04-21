@@ -74,7 +74,7 @@ img {
   line-height: 1.4rem;
 }
 
-form.login {
+form.login, form.register {
   max-width: 400px;
   margin: 0 auto;
   display: flex;
@@ -95,6 +95,6 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-  background-color: #111;
+  background-color: #444;
   color: #eee;
 }
