@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import  Post from './Post';
 import Layout from './Layout';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
@@ -8,7 +7,6 @@ import RegisterPage from './pages/RegisterPage';
 
 function App() {
   return (
-    <BrowserRouter>
     <Routes>
       <Route path={"/"} element={<Layout />}>  
         <Route index element={ <HomePage /> }/>
@@ -16,7 +14,6 @@ function App() {
         <Route path='register' element={<RegisterPage />} />
       </Route>
     </Routes>
-    </BrowserRouter>
   );
 }
 
